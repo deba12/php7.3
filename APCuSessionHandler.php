@@ -1,10 +1,9 @@
 <?php
-/** @noinspection PhpUnused */
 declare(strict_types=1);
 
 class APCuSessionHandler implements SessionHandlerInterface, SessionIdInterface, SessionUpdateTimestampHandlerInterface {
 
-    private int $ttl;
+    private $ttl;
 
     /**
      * @param int $ttl
